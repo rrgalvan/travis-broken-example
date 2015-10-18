@@ -4,4 +4,4 @@ addons:
     packages:
     - gfortran
 script:
-	make test 
+  make test
