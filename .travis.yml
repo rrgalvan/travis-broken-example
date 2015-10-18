@@ -5,3 +5,11 @@ addons:
     - gfortran
 script:
   make test
+# Test all branches (*)
+branches:
+  only:
+    - /*/
+notifications:
+  email:
+    on_success: change # default: change (send a notification when the build status changes)
+    on_failure: never # default: always
